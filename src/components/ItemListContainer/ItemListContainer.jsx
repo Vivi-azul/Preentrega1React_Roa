@@ -5,12 +5,12 @@ import ItemList from "../ItemList/ItemList"
 const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
    
-    useEffect(() =>{
+    useEffect(() => {
         getProducts()
         .then(result => {
             setProducts(result)
         })
-    })
+    }, [])
    
     return (
         <main>

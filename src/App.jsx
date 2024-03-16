@@ -3,20 +3,21 @@ import { useState } from 'react'
 import React from 'react'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemCount from './components/ItemCount/ItemCount'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div> 
-      <Navbar title="*Tiendita V + L*"/>
-      <ItemListContainer greeting={'Miau..Guau'} />
-      {/* <h1>Miau..Guau</h1> */}
-      {React.createElement('p', {}, 'Proximamente encontraras lo que necesites')}
-      <ItemCount stock={12}/>
+      <BrowserRouter>
+        <Navbar title="*Tiendita V + L*"/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting={'Miau..Guau'} />} />
+          <Route path='/item/: itemId' element={<ItemDetailContainer/>} />
+        </Routes>
+      </BrowserRouter>      
     </div>
-
   )
 }
 
