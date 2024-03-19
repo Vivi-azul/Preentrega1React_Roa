@@ -2,17 +2,17 @@ const products = [
     {
         id: '1',
         nombre: 'DogChow',
-        Precio: 2500,
-        Categoria: Perro,
-        img: 'https://www.google.cl/url?sa=i&url=https%3A%2F%2Fwww.novapet.cl%2Fproduct%2Fpurina-dog-chow-adultos-carne-y-pollo-18kg&psig=AOvVaw2nj2sficfAzG-ggOhWRh0Y&ust=1710468149987000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj2t6_U8oQDFQAAAAAdAAAAABAE',
+        precio: 2500,
+        categoria: 'Perro',
+        img: 'https://www.valdipets.cl/product/alimento-perro-dog-chow-adulto-raza-mediana-grande',
         stock: 20,
         Descripción: 'Formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.'
     },
     {
         id: '2',
         nombre: 'Whiskas',
-        Precio: 3100,
-        Categoria: Gato,
+        precio: 3100,
+        categoria: 'Gato',
         img: 'https://www.google.cl/url?sa=i&url=https%3A%2F%2Fwww.whiskas.cl%2Fnuestros-productos%2Falimento-seco%2Fwhiskas-alimento-seco-para-gatos-adultos-carne&psig=AOvVaw3JiVwJ7VQlTcoFCS1ujzZT&ust=1710468431684000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKjR8rPV8oQDFQAAAAAdAAAAABAE',
         stock: 20,
         descripción: 'Preparada para satisfacer las necesidades nutricionales de su gatoAlimento para gatos 100% completo y balanceadoFibras múltiples apoyan el funcionamiento gastrointestinal, contribuyendo a la formación de heces firmes y fáciles de limpiar.'
