@@ -6,7 +6,7 @@ const products = [
         categoria: 'Perro',
         img: 'https://www.valdipets.cl/product/alimento-perro-dog-chow-adulto-raza-mediana-grande',
         stock: 20,
-        Descripción: 'Formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.'
+        descripción: 'Formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.'
     },
     {
         id: '2',
@@ -41,6 +41,15 @@ const products = [
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.filter(prod => prod.categoria === categoriaId))
-        }, 1000)
+        }, 800)
     })
+ }
+
+ export const getProductsBydescripción = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(products)
+          }, 1000)
+    })
+        
  }
