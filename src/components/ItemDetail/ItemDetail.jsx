@@ -1,6 +1,6 @@
 import ItemCount from "../ItemCount/ItemCount"
 
-const ItemDetail = ({ nombre, categoria, precio, img, descripcion, stock }) => {
+const ItemDetail = ({ id, nombre, categoria, precio, img, descripcion, stock }) => {
     return (
         <article>
             <h4>Categoria: {categoria}</h4>

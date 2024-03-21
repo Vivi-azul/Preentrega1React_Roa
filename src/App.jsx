@@ -9,16 +9,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div> 
-      <BrowserRouter>
-        <Navbar title="*Tiendita V + L*"/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer greeting={'Miau..Guau'} />} />
-          <Route path='/item/: itemId' element={<ItemDetailContainer/>} />
-        </Routes>
-      </BrowserRouter>      
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar title="*Tiendita V + L*" />
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting={'Miau..Guau'} />} />
+        <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+    {/* <ItemCount stock={20} /> */}
 
-export default App
+export default App;
